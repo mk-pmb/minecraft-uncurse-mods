@@ -1,0 +1,22 @@
+{ "name": "minecraft-uncurse-mods",
+  "version": "0.0.1",
+  "description": "Trying to provide FOSS-friendly download options for lots Minecraft mods currently imprisoned on CurseForge.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/minecraft-uncurse-mods/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/minecraft-uncurse-mods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/minecraft-uncurse-mods/issues"
+  },
+  "contributors": [],
+
+  "private": true, "license": "ISC",
+
+
+
+  "engines": {}
+}
