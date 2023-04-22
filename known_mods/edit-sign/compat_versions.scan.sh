@@ -6,17 +6,20 @@ function compat_versions_scan () {
   export LANG{,UAGE}=en_US.UTF-8  # make error messages search engine-friendly
   local SELFPATH="$(readlink -m -- "$BASH_SOURCE"/..)"
   local -A CFG=(
-    [scan_tags_since]='bcea78c7' # PR 503 merged
+    [scan_tags_since]='0393cbae'
     [scan_tags_report]='compat_versions.txt'
     )
-  source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
+  source "$SELFPATH"/../../src/git-util/scan_all_tags.sh || return $?
 }
 
 
 function found_one_tag () {
   printf >&7 '%s\t' tag="$TAG" commit="$COMMIT"
-  local MC_VER="$(find_minecraft_version_for_tag)"
-  printf >&7 '%s\t' minecraft="$MC_VER"
+  local MOD_VER="$TAG"
+  local MCR_VER=
+  local RGX=''
+  local -p
+
   echo >&7 =
 }
 
