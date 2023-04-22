@@ -1,0 +1,17 @@
+﻿{ "catalogFormat": "0.230422.1",
+  "mods": {
+    "worldedit": {
+      "modVersion": "7.2.13",
+      "downloadUrl": "http://web.archive.org/web/20230422000909/https://ci.enginehub.org/repository/download/bt10/21278:id/worldedit-fabric-mc1.19.3-7.2.13-dist.jar?branch=version%2F7.2.x&guest=1",
+      "sha512hex": "1aceae414b186218ef484e1b51d43f44aadf8dd8613fb6c6792f169f046219b6ca1cf178b17209e112c0c4a376a62d8d2cd813772542725113f2908a979309e2",
+      "fileSize": 4496096
+    },
+    "worldeditcui": {
+      "modVersion": "1.19.3+01",
+      "downloadUrl": "https://github.com/EngineHub/WorldEditCUI/releases/download/1.19.3%2B01/WorldEditCUI-1.19.3+01.jar",
+      "sha512hex": "6407fd1ba7d88422cec6c8877215ac7dd99118644bf5c499df781795acc1896f7e009e10ec3b429d33cd77dfa6010527f2ef34add24673127f0002f87cb3873a",
+      "fileSize": 564257
+    },
+    "": false
+  }
+}
