@@ -25,7 +25,7 @@ function scan_all_tags () {
     git tag
     --list
     --contains "${CFG[scan_tags_since]:-<E: missing option scan_tags_since>}"
-    --sort="${CFG[scan_tags_sort]:-version:refname}"
+    --sort="${CFG[scan_tags_ref_sort]:-version:refname}"
     )
   readarray -t TAGS < <("${TAGS[@]}")
   local TAG= COMMIT=
@@ -37,9 +37,39 @@ function scan_all_tags () {
       echo "E: Failed to run hook '$EACH_TAG_CMD' for tag '$TAG', rv=$?" >&2)
   done 7>"$REPORT_TMP"
 
+  LANG=C sort --version-sort -- "$REPORT_TMP" >"$REPORT_TMP".sorted || return $?
+  mv --no-target-directory -- "$REPORT_TMP"{.sorted,} || return $?
+
+  "${CFG[scan_tags_refine_tmp]:-true}" "$REPORT_TMP" || return $?
+
   "$DIFF" -sU 2 -- "$REPORT_DEST" "$REPORT_TMP" || true
   mv --no-target-directory --verbose \
     -- "$REPORT_TMP" "$REPORT_DEST" || return $?
+}
+
+
+function scan_all_tags__write_info_dict () {
+  local KEY= VAL= MANDATORY= BUF=
+  KEY="
+    ${CFG[scan_tags_version_field]:-modver}
+    tag|
+    commit|
+    $*"
+  for KEY in $KEY; do
+    MANDATORY=
+    case "$KEY" in
+      *'|' ) KEY="${KEY%|}"; MANDATORY='|';;
+      *'!' ) KEY="${KEY%!}"; MANDATORY='+';;
+    esac
+    VAL="${INFO[$KEY]}"
+    [ -n "$VAL" ] || [ "$MANDATORY" != '|' ] || eval 'VAL=$'"${KEY^^}"
+    [ -z "$MANDATORY" ] || case "$VAL" in
+      *$'\n'* | \
+      '' ) echo "E: Invalid info '$KEY'='$VAL' for tag '$TAG'!" >&2; return 4;;
+    esac
+    BUF+="$KEY=$VAL"$'\t'
+  done
+  echo >&7 "$BUF="
 }
 
 
