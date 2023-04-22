@@ -29,6 +29,19 @@ Let's lift that curse.
 
 
 
+Mods currently in scope
+-----------------------
+
+### Good enough
+
+* [WorldEdit + WorldEdit CUI](known_mods/worldedit/)
+
+
+### Upcoming
+
+(—)
+
+
 
 
 
