@@ -31,11 +31,20 @@ function found_one_tag () {
   local JAVA="$(find_java_version_for_tag)"
   INFO[java]="$JAVA"
 
+  local LIC="$(git show "$TAG":LICENSE.md | sha1sum --binary -)"
+  case "$LIC" in
+    '7bc5474bacf20ef085e04ded37c5e604c197cf07 *-' ) LIC='GPL-3.0-only';;
+    'a8a12e6867d7ee39c21d9b11a984066099b6fb6b *-' ) LIC='LGPL-3.0-only';;
+    * ) echo "E: Unknown license: $LIC" >&2; return 3;;
+  esac
+  INFO[license]="$LIC"
+
   local UTS="$(git show --no-patch --format=%at "$COMMIT")"
   INFO[date]="$(date --date="@$UTS" --utc +'%FT%TZ')"
 
   scan_all_tags__write_info_dict '
     date!
+    license!
     modver!
     mcr|
     java!
