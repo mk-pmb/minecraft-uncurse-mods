@@ -7,8 +7,9 @@ function compat_versions_scan () {
   local SELFPATH="$(readlink -m -- "$BASH_SOURCE"/..)"
   local -A CFG=(
     [scan_tags_since]='0393cbae'
-    [scan_tags_report]='compat_versions.txt'
+    [scan_tags_report_dest]='compat_versions.txt'
     )
+  rm -- tmp.java_*.txt
   source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
 }
 
@@ -26,12 +27,25 @@ function found_one_tag () {
   unset INFO[mod_suf]
   [ -n "${INFO[mcr]}" ] || INFO[mcr]="$(find_minecraft_version_for_tag)"
 
-  INFO[java]="$(find_java_version_for_tag)"
+  local JAVA="$(find_java_version_for_tag)"
+  INFO[java]="$JAVA"
+
+  local JMX=
+  printf -v JMX 'tmp.java_%03d.txt' "$JAVA"
+  [ -f "$JMX" ] || init_java_matrix >"$JMX" || return $?
+  echo "                    -   '$TAG'" >>"$JMX" || return $?
+
+  local UTS="$(git show --no-patch --format=%at "$COMMIT")"
+  INFO[date]="$(date --date="@$UTS" --utc +'%FT%TZ')"
 
   scan_all_tags__write_info_dict '
-    mcr!
-    loader
+    date!
+    modver!
+    mcr|
     java!
+    loader
+    tag|
+    commit|
     ' || return $?
 }
 
@@ -49,6 +63,14 @@ function find_java_version_for_tag () {
     s~^ *uses: *[A-Za-z]+/gradle-actions/openjdk-([0-9]+)@\S+$~\1~p
     s~^ *java-version: ([0-9]+)$~\1~p
     ')
+}
+
+
+function init_java_matrix () {
+  local M=">>>matrix:¶java:   $JAVA¶tag:"
+  M="${M//¶/$'\n'>>>>}"
+  M="${M//>/    }"
+  echo "$M"
 }
 
 

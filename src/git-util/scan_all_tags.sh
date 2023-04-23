@@ -15,7 +15,7 @@ function scan_all_tags () {
   export GIT_DIR='tmp.bare-repo.git'
   "$REPOPATH"/src/git-util/ensure_bare_repo.sh "${MOD[repo]}" || return $?
 
-  local REPORT_DEST="${CFG[scan_tags_report]}"
+  local REPORT_DEST="${CFG[scan_tags_report_dest]}"
   local REPORT_TMP="tmp.$REPORT_DEST"
 
   local DIFF='diff'
@@ -35,10 +35,17 @@ function scan_all_tags () {
     [ -n "$COMMIT" ] || return 4$(echo "E: Tag '$TAG' has no commit!" >&2)
     $EACH_TAG_CMD || return $?$(
       echo "E: Failed to run hook '$EACH_TAG_CMD' for tag '$TAG', rv=$?" >&2)
-  done 7>"$REPORT_TMP"
+  done 7>>"$REPORT_TMP"
 
   LANG=C sort --version-sort -- "$REPORT_TMP" >"$REPORT_TMP".sorted || return $?
-  mv --no-target-directory -- "$REPORT_TMP"{.sorted,} || return $?
+  local VAL="${CFG[scan_tags_report_prepend]}"
+  >"$REPORT_TMP" || return $?
+  [ -z "$VAL" ] || echo "$VAL" >>"$REPORT_TMP" || return $?
+  VAL="${CFG[scan_tags_report_tabwidth]:-16}"
+  [ "$VAL" == 0 ] || echo "# -*- coding: utf-8, tab-width: $VAL -*-" \
+    >>"$REPORT_TMP" || return $?
+  cat -- "$REPORT_TMP".sorted >>"$REPORT_TMP" || return $?
+  rm -- "$REPORT_TMP".sorted || return $?
 
   "${CFG[scan_tags_refine_tmp]:-true}" "$REPORT_TMP" || return $?
 
@@ -49,13 +56,21 @@ function scan_all_tags () {
 
 
 function scan_all_tags__write_info_dict () {
-  local KEY= VAL= MANDATORY= BUF=
-  KEY="
-    ${CFG[scan_tags_version_field]:-modver}
-    tag|
-    commit|
-    $*"
-  for KEY in $KEY; do
+  local PRIO= KEY= VAL= MANDATORY= BUF=
+
+  # Assemble column priorities in VAL:
+  for KEY in $*; do case "$KEY" in
+    '<'* ) PRIO+=" ${KEY:1}";;
+    * ) VAL+=" $KEY";;
+  esac; done
+  MANDATORY="${CFG[scan_tags_version_field]:-modver} tag| commit|"
+  for KEY in $MANDATORY; do case " $PRIO $VAL " in
+    *" $KEY! "* ) ;;
+    *" $KEY "* ) ;;
+    * ) PRIO+=" $KEY";;
+  esac; done
+
+  for KEY in $PRIO $VAL; do
     MANDATORY=
     case "$KEY" in
       *'|' ) KEY="${KEY%|}"; MANDATORY='|';;

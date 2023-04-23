@@ -1,56 +1,57 @@
-modver=2.0.0	tag=EditSign-Fabric-1.15.2-2.0.0	commit=a9f9c4457acd19273575f34a617b3eba21f26778	mcr=1.15.2	loader=fabric	java=8	=
-modver=2.0.0	tag=EditSign-Fabric-1.16.1-2.0.0	commit=a217964791b72f7437911f1ce9af24685f7fde7e	mcr=1.16.1	loader=fabric	java=8	=
-modver=2.0.0	tag=EditSign-Fabric-1.16.2-2.0.0	commit=6130fbfe5155bc0417ae720aa862f73dd4a6f004	mcr=1.16.2	loader=fabric	java=8	=
-modver=2.0.0+6	tag=1.15-2.0.0+6	commit=3b2781045b8f95865b1c3304f1b16fb58d93967e	mcr=1.15.0	loader=	java=8	=
-modver=2.0.0+7	tag=1.15.1-2.0.0+7	commit=78d8bda2822210a28c4f6037424845377af99039	mcr=1.15.1	loader=	java=8	=
-modver=2.0.0+7	tag=1.15.2-2.0.0+7	commit=9dc1982e80bb8876954b973328f3e59f826384a9	mcr=1.15.2	loader=	java=8	=
-modver=2.0.0+7	tag=1.16.1-2.0.0+7	commit=d80c6ac72f0a9e772406d11ebcc6a029cbf63f24	mcr=1.16.1	loader=	java=8	=
-modver=2.0.1	tag=EditSign-Forge-1.16.1-2.0.1	commit=ddb544e83f94a8aa0825fbf54ce8897e58c6e01b	mcr=1.16.1	loader=forge	java=8	=
-modver=2.1.0	tag=EditSign-Fabric-1.15.2-2.1.0	commit=77ac7f68884e5ed00f97cc0e045556a4d8722679	mcr=1.15.2	loader=fabric	java=8	=
-modver=2.1.0	tag=EditSign-Fabric-1.16.1-2.1.0	commit=72b1298370b6e420c69db1337df41c431ec4bd59	mcr=1.16.1	loader=fabric	java=8	=
-modver=2.1.0	tag=EditSign-Fabric-1.16.2-2.1.0	commit=8ff861eb2e4556bc1aa2f68ba4009ef2dfc1ec0a	mcr=1.16.2	loader=fabric	java=8	=
-modver=2.1.0	tag=EditSign-Forge-1.16.1-2.1.0	commit=9dd99d8e65b4f6f35118c0f338329833bfcb6b65	mcr=1.16.1	loader=forge	java=8	=
-modver=2.1.0+1	tag=1.15.2-2.1.0+1	commit=893c39f11117484ddf8ab0aff9d34e296c3e2e32	mcr=1.15.2	loader=	java=8	=
-modver=2.1.1	tag=EditSign-Fabric-1.15.2-2.1.1	commit=2a5c56b7951e2f6dfe353e19555cd2bd1cfbf466	mcr=1.15.2	loader=fabric	java=8	=
-modver=2.1.1	tag=EditSign-Fabric-1.16.1-2.1.1	commit=10fb1e6b2eabe1a61da3ca93033bbe8b55f084c6	mcr=1.16.1	loader=fabric	java=8	=
-modver=2.1.1	tag=EditSign-Fabric-1.16.2-2.1.1	commit=01cbb2a7a623f91bb37d7ce4728de1a40f7f29cf	mcr=1.16.2	loader=fabric	java=8	=
-modver=2.1.1	tag=EditSign-Fabric-1.16.3-2.1.1	commit=36a6521258e200e0d4113c1a665e6a28b975e8a7	mcr=1.16.3	loader=fabric	java=8	=
-modver=2.1.1	tag=EditSign-Forge-1.16.1-2.1.1	commit=d3a54d6c6b4c64af146453396ea3b9e93c80656a	mcr=1.16.1	loader=forge	java=8	=
-modver=2.1.1	tag=EditSign-Forge-1.16.2-2.1.1	commit=f549c6326222a218dd5b2009914303075b8f50f3	mcr=1.16.2	loader=forge	java=8	=
-modver=2.1.2	tag=EditSign-Forge-1.16.2-2.1.2	commit=706bcfe4af044116577bff7920df054aa51e8e77	mcr=1.16.2	loader=forge	java=8	=
-modver=2.1.2	tag=EditSign-Forge-1.16.3-2.1.2	commit=9f27abb5d50f7bc23460d9eea424c2398e8cc337	mcr=1.16.3	loader=forge	java=8	=
-modver=2.1.3	tag=EditSign-Fabric-1.16.1-2.1.3	commit=5b2347662273dc7d8de9dc4178ccbc300faa20f5	mcr=1.16.1	loader=fabric	java=8	=
-modver=2.1.3	tag=EditSign-Fabric-1.16.2-2.1.3	commit=23d6fbc9d43d41e6762fa25cdce760d184624adb	mcr=1.16.2	loader=fabric	java=8	=
-modver=2.1.3	tag=EditSign-Fabric-1.16.3-2.1.3	commit=9b7e7ca6dd2207e8286a179176da9672d633ed62	mcr=1.16.3	loader=fabric	java=8	=
-modver=2.1.3	tag=EditSign-Fabric-1.16.4-2.1.3	commit=ccb05809148f4cf6c2b9ca7b959514cc428fe2c4	mcr=1.16.4	loader=fabric	java=8	=
-modver=2.1.3	tag=EditSign-Forge-1.16.1-2.1.3	commit=236caf101d0ecca02891f7e36dca0ab2c1ed3fd5	mcr=1.16.1	loader=forge	java=8	=
-modver=2.1.3	tag=EditSign-Forge-1.16.2-2.1.3	commit=f1c8774597f6cea6a5dada5561405934da4ffc9f	mcr=1.16.2	loader=forge	java=8	=
-modver=2.1.3	tag=EditSign-Forge-1.16.3-2.1.3	commit=4cc614912eef0b5cab9ff35896c6f781a5924c0c	mcr=1.16.3	loader=forge	java=8	=
-modver=2.1.3	tag=EditSign-Forge-1.16.4-2.1.3	commit=2d4ad6236c982e9d6d6313028829d97c3a99c8b6	mcr=1.16.4	loader=forge	java=8	=
-modver=2.1.4	tag=EditSign-Fabric-1.16.4-2.1.4	commit=a2b36559f4d486902a8467b7c09ad068e1647fee	mcr=1.16.4	loader=fabric	java=8	=
-modver=2.1.4	tag=EditSign-Forge-1.16.4-2.1.4	commit=47794a5020ec3e4adfc506199d4e6161833801fa	mcr=1.16.4	loader=forge	java=8	=
-modver=2.2.0	tag=EditSign-1.16.5-2.2.0	commit=34c6f513faee22d39da1108150e7058acc5a1b50	mcr=1.16.5	loader=	java=8	=
-modver=2.2.0	tag=EditSign-Fabric-1.16.4-2.2.0	commit=ddc6740efa2a11bd41ea0e2a980e11b22330027e	mcr=1.16.4	loader=fabric	java=8	=
-modver=2.2.0	tag=EditSign-Fabric-1.16.5-2.2.0	commit=01c0d9d3fdcd9ea6e2bdf3b1257d0921f74ed44d	mcr=1.16.5	loader=fabric	java=8	=
-modver=2.2.0	tag=EditSign-Forge-1.16.4-2.2.0	commit=3baf6a873be8bc3290ba88221bf2758a1c11cb6a	mcr=1.16.4	loader=forge	java=8	=
-modver=2.2.0	tag=EditSign-Forge-1.16.5-2.2.0	commit=0c37d1bf738a8e104d7f31b93dae67badd211ffa	mcr=1.16.5	loader=forge	java=8	=
-modver=2.2.1	tag=1.16.5-2.2.1	commit=0b8687ae7cdd5169f4e39a51e9b4e477584e3590	mcr=1.16.5	loader=	java=8	=
-modver=2.2.2	tag=1.17.1-2.2.2	commit=7c722004ae67bc5d8c8c38dce270bb5e74738f14	mcr=1.17.1	loader=	java=16	=
-modver=2.2.3	tag=1.17.1-2.2.3	commit=56ef961419fb03ec4c35dc77fe8b000db5783b71	mcr=1.17.1	loader=	java=16	=
-modver=2.2.4	tag=2.2.4	commit=062fe3dfaa87ffb9c053d262180b008dc6cba75b	mcr=1.17.1	loader=	java=16	=
-modver=2.2.5	tag=2.2.5	commit=5136fec3a314d5efbea11b03b5c22db3f0df0fed	mcr=1.18	loader=	java=17	=
-modver=2.2.6	tag=2.2.6	commit=a95a85b8c65668e8c3c7090ce1b4e11c928ea668	mcr=1.18	loader=	java=17	=
-modver=2.2.7	tag=2.2.7	commit=063fa796d7e1a685388f287485eeef1fa3a33ce2	mcr=1.18.1	loader=	java=17	=
-modver=2.3.0	tag=2.3.0	commit=71e6b464a7936c93ce6f6e3ed7202a2676aac8bb	mcr=1.18.2	loader=	java=17	=
-modver=2.3.1	tag=2.3.1	commit=c572babdc4396d9ad970f18d8a36a80f24c238c4	mcr=1.18.2	loader=	java=17	=
-modver=2.4.0	tag=2.4.0	commit=0f71df9e4929b87238a7ad97073e439df97c207f	mcr=1.19	loader=	java=17	=
-modver=2.4.1	tag=2.4.1	commit=37be287530db391265a7fd94ce3a3062d5134e7d	mcr=1.19	loader=	java=17	=
-modver=2.4.2	tag=2.4.2	commit=b3fb391706543cf1c2cfdb3f7519d85c2b1dacf4	mcr=1.19	loader=	java=17	=
-modver=2.5.0	tag=2.5.0	commit=f0c9a9f5432dcddfd513d57d684729987bae6559	mcr=1.19.1	loader=	java=17	=
-modver=2.5.1	tag=2.5.1	commit=38db26f449c794f1aa29dff6a76ce93cedb1551a	mcr=1.19.1	loader=	java=17	=
-modver=2.5.2	tag=2.5.2	commit=9ed22475811f129689bece962997a643c5f5eff7	mcr=1.19.1	loader=	java=17	=
-modver=2.6.0	tag=2.6.0	commit=7874fe1435964fa6e2345fbd88fa5735479e49c8	mcr=1.19.2	loader=	java=17	=
-modver=2.7.0a1	tag=2.7.0a1	commit=6176e542f1edb9bd0fc0ccdb33e0df3d272ebdbc	mcr=22w43a	loader=	java=17	=
-modver=2.7.0	tag=2.7.0	commit=3669bd6fe7f83dbe24b698153ff8cb559ce02cb6	mcr=1.19.3	loader=	java=17	=
-modver=2.7.1	tag=2.7.1	commit=0900742facf88d3f378c8cac2a4a1d7edc9cb88a	mcr=1.19.4	loader=	java=17	=
-modver=2.8.0	tag=2.8.0	commit=1c071a51176a9e64990fb3b91363d17485b3cfbb	mcr=1.19.4	loader=	java=17	=
+# -*- coding: utf-8, tab-width: 16 -*-
+date=2019-12-17T19:51:44Z	modver=2.0.0+6	mcr=1.15.0	java=8	loader=	tag=1.15-2.0.0+6	commit=3b2781045b8f95865b1c3304f1b16fb58d93967e	=
+date=2019-12-17T21:52:32Z	modver=2.0.0+7	mcr=1.15.1	java=8	loader=	tag=1.15.1-2.0.0+7	commit=78d8bda2822210a28c4f6037424845377af99039	=
+date=2020-01-23T15:54:43Z	modver=2.0.0+7	mcr=1.15.2	java=8	loader=	tag=1.15.2-2.0.0+7	commit=9dc1982e80bb8876954b973328f3e59f826384a9	=
+date=2020-06-26T09:42:54Z	modver=2.0.0+7	mcr=1.16.1	java=8	loader=	tag=1.16.1-2.0.0+7	commit=d80c6ac72f0a9e772406d11ebcc6a029cbf63f24	=
+date=2020-08-09T18:11:39Z	modver=2.0.0	mcr=1.15.2	java=8	loader=fabric	tag=EditSign-Fabric-1.15.2-2.0.0	commit=a9f9c4457acd19273575f34a617b3eba21f26778	=
+date=2020-08-09T18:35:21Z	modver=2.0.0	mcr=1.16.1	java=8	loader=fabric	tag=EditSign-Fabric-1.16.1-2.0.0	commit=a217964791b72f7437911f1ce9af24685f7fde7e	=
+date=2020-08-09T19:14:49Z	modver=2.0.1	mcr=1.16.1	java=8	loader=forge	tag=EditSign-Forge-1.16.1-2.0.1	commit=ddb544e83f94a8aa0825fbf54ce8897e58c6e01b	=
+date=2020-08-11T17:44:05Z	modver=2.0.0	mcr=1.16.2	java=8	loader=fabric	tag=EditSign-Fabric-1.16.2-2.0.0	commit=6130fbfe5155bc0417ae720aa862f73dd4a6f004	=
+date=2020-08-12T20:06:44Z	modver=2.1.0	mcr=1.16.2	java=8	loader=fabric	tag=EditSign-Fabric-1.16.2-2.1.0	commit=8ff861eb2e4556bc1aa2f68ba4009ef2dfc1ec0a	=
+date=2020-08-12T20:21:05Z	modver=2.1.0	mcr=1.16.1	java=8	loader=fabric	tag=EditSign-Fabric-1.16.1-2.1.0	commit=72b1298370b6e420c69db1337df41c431ec4bd59	=
+date=2020-08-12T20:35:42Z	modver=2.1.0	mcr=1.15.2	java=8	loader=fabric	tag=EditSign-Fabric-1.15.2-2.1.0	commit=77ac7f68884e5ed00f97cc0e045556a4d8722679	=
+date=2020-08-12T21:04:36Z	modver=2.1.0+1	mcr=1.15.2	java=8	loader=	tag=1.15.2-2.1.0+1	commit=893c39f11117484ddf8ab0aff9d34e296c3e2e32	=
+date=2020-08-12T21:11:56Z	modver=2.1.0	mcr=1.16.1	java=8	loader=forge	tag=EditSign-Forge-1.16.1-2.1.0	commit=9dd99d8e65b4f6f35118c0f338329833bfcb6b65	=
+date=2020-08-13T16:42:03Z	modver=2.1.1	mcr=1.16.1	java=8	loader=fabric	tag=EditSign-Fabric-1.16.1-2.1.1	commit=10fb1e6b2eabe1a61da3ca93033bbe8b55f084c6	=
+date=2020-08-13T16:45:57Z	modver=2.1.1	mcr=1.16.2	java=8	loader=fabric	tag=EditSign-Fabric-1.16.2-2.1.1	commit=01cbb2a7a623f91bb37d7ce4728de1a40f7f29cf	=
+date=2020-08-13T16:49:01Z	modver=2.1.1	mcr=1.15.2	java=8	loader=fabric	tag=EditSign-Fabric-1.15.2-2.1.1	commit=2a5c56b7951e2f6dfe353e19555cd2bd1cfbf466	=
+date=2020-08-13T17:34:40Z	modver=2.1.1	mcr=1.16.1	java=8	loader=forge	tag=EditSign-Forge-1.16.1-2.1.1	commit=d3a54d6c6b4c64af146453396ea3b9e93c80656a	=
+date=2020-08-13T18:00:11Z	modver=2.1.1	mcr=1.16.2	java=8	loader=forge	tag=EditSign-Forge-1.16.2-2.1.1	commit=f549c6326222a218dd5b2009914303075b8f50f3	=
+date=2020-08-14T14:18:46Z	modver=2.1.2	mcr=1.16.2	java=8	loader=forge	tag=EditSign-Forge-1.16.2-2.1.2	commit=706bcfe4af044116577bff7920df054aa51e8e77	=
+date=2020-09-10T16:58:12Z	modver=2.1.1	mcr=1.16.3	java=8	loader=fabric	tag=EditSign-Fabric-1.16.3-2.1.1	commit=36a6521258e200e0d4113c1a665e6a28b975e8a7	=
+date=2020-09-11T19:49:49Z	modver=2.1.2	mcr=1.16.3	java=8	loader=forge	tag=EditSign-Forge-1.16.3-2.1.2	commit=9f27abb5d50f7bc23460d9eea424c2398e8cc337	=
+date=2020-10-20T16:38:58Z	modver=2.1.3	mcr=1.16.1	java=8	loader=forge	tag=EditSign-Forge-1.16.1-2.1.3	commit=236caf101d0ecca02891f7e36dca0ab2c1ed3fd5	=
+date=2020-10-20T16:48:52Z	modver=2.1.3	mcr=1.16.1	java=8	loader=fabric	tag=EditSign-Fabric-1.16.1-2.1.3	commit=5b2347662273dc7d8de9dc4178ccbc300faa20f5	=
+date=2020-10-20T16:51:36Z	modver=2.1.3	mcr=1.16.2	java=8	loader=forge	tag=EditSign-Forge-1.16.2-2.1.3	commit=f1c8774597f6cea6a5dada5561405934da4ffc9f	=
+date=2020-10-20T16:53:14Z	modver=2.1.3	mcr=1.16.2	java=8	loader=fabric	tag=EditSign-Fabric-1.16.2-2.1.3	commit=23d6fbc9d43d41e6762fa25cdce760d184624adb	=
+date=2020-10-20T16:58:13Z	modver=2.1.3	mcr=1.16.3	java=8	loader=forge	tag=EditSign-Forge-1.16.3-2.1.3	commit=4cc614912eef0b5cab9ff35896c6f781a5924c0c	=
+date=2020-10-20T17:00:01Z	modver=2.1.3	mcr=1.16.3	java=8	loader=fabric	tag=EditSign-Fabric-1.16.3-2.1.3	commit=9b7e7ca6dd2207e8286a179176da9672d633ed62	=
+date=2020-11-02T21:10:42Z	modver=2.1.3	mcr=1.16.4	java=8	loader=forge	tag=EditSign-Forge-1.16.4-2.1.3	commit=2d4ad6236c982e9d6d6313028829d97c3a99c8b6	=
+date=2020-11-02T21:14:27Z	modver=2.1.3	mcr=1.16.4	java=8	loader=fabric	tag=EditSign-Fabric-1.16.4-2.1.3	commit=ccb05809148f4cf6c2b9ca7b959514cc428fe2c4	=
+date=2020-12-26T09:42:57Z	modver=2.1.4	mcr=1.16.4	java=8	loader=fabric	tag=EditSign-Fabric-1.16.4-2.1.4	commit=a2b36559f4d486902a8467b7c09ad068e1647fee	=
+date=2020-12-26T09:47:29Z	modver=2.1.4	mcr=1.16.4	java=8	loader=forge	tag=EditSign-Forge-1.16.4-2.1.4	commit=47794a5020ec3e4adfc506199d4e6161833801fa	=
+date=2021-01-06T13:36:27Z	modver=2.2.0	mcr=1.16.4	java=8	loader=forge	tag=EditSign-Forge-1.16.4-2.2.0	commit=3baf6a873be8bc3290ba88221bf2758a1c11cb6a	=
+date=2021-01-06T13:41:09Z	modver=2.2.0	mcr=1.16.4	java=8	loader=fabric	tag=EditSign-Fabric-1.16.4-2.2.0	commit=ddc6740efa2a11bd41ea0e2a980e11b22330027e	=
+date=2021-01-15T20:19:24Z	modver=2.2.0	mcr=1.16.5	java=8	loader=fabric	tag=EditSign-Fabric-1.16.5-2.2.0	commit=01c0d9d3fdcd9ea6e2bdf3b1257d0921f74ed44d	=
+date=2021-01-15T20:53:54Z	modver=2.2.0	mcr=1.16.5	java=8	loader=forge	tag=EditSign-Forge-1.16.5-2.2.0	commit=0c37d1bf738a8e104d7f31b93dae67badd211ffa	=
+date=2021-04-13T18:53:01Z	modver=2.2.0	mcr=1.16.5	java=8	loader=	tag=EditSign-1.16.5-2.2.0	commit=34c6f513faee22d39da1108150e7058acc5a1b50	=
+date=2021-04-25T09:35:01Z	modver=2.2.1	mcr=1.16.5	java=8	loader=	tag=1.16.5-2.2.1	commit=0b8687ae7cdd5169f4e39a51e9b4e477584e3590	=
+date=2021-07-31T16:54:19Z	modver=2.2.2	mcr=1.17.1	java=16	loader=	tag=1.17.1-2.2.2	commit=7c722004ae67bc5d8c8c38dce270bb5e74738f14	=
+date=2021-08-08T20:12:06Z	modver=2.2.3	mcr=1.17.1	java=16	loader=	tag=1.17.1-2.2.3	commit=56ef961419fb03ec4c35dc77fe8b000db5783b71	=
+date=2021-08-20T17:24:41Z	modver=2.2.4	mcr=1.17.1	java=16	loader=	tag=2.2.4	commit=062fe3dfaa87ffb9c053d262180b008dc6cba75b	=
+date=2021-11-30T18:29:37Z	modver=2.2.5	mcr=1.18	java=17	loader=	tag=2.2.5	commit=5136fec3a314d5efbea11b03b5c22db3f0df0fed	=
+date=2021-12-01T19:15:09Z	modver=2.2.6	mcr=1.18	java=17	loader=	tag=2.2.6	commit=a95a85b8c65668e8c3c7090ce1b4e11c928ea668	=
+date=2021-12-13T07:24:10Z	modver=2.2.7	mcr=1.18.1	java=17	loader=	tag=2.2.7	commit=063fa796d7e1a685388f287485eeef1fa3a33ce2	=
+date=2022-02-28T17:56:31Z	modver=2.3.0	mcr=1.18.2	java=17	loader=	tag=2.3.0	commit=71e6b464a7936c93ce6f6e3ed7202a2676aac8bb	=
+date=2022-03-13T11:56:11Z	modver=2.3.1	mcr=1.18.2	java=17	loader=	tag=2.3.1	commit=c572babdc4396d9ad970f18d8a36a80f24c238c4	=
+date=2022-06-07T18:18:58Z	modver=2.4.0	mcr=1.19	java=17	loader=	tag=2.4.0	commit=0f71df9e4929b87238a7ad97073e439df97c207f	=
+date=2022-06-09T17:38:26Z	modver=2.4.1	mcr=1.19	java=17	loader=	tag=2.4.1	commit=37be287530db391265a7fd94ce3a3062d5134e7d	=
+date=2022-07-16T13:07:03Z	modver=2.4.2	mcr=1.19	java=17	loader=	tag=2.4.2	commit=b3fb391706543cf1c2cfdb3f7519d85c2b1dacf4	=
+date=2022-07-27T19:30:49Z	modver=2.5.0	mcr=1.19.1	java=17	loader=	tag=2.5.0	commit=f0c9a9f5432dcddfd513d57d684729987bae6559	=
+date=2022-07-28T19:06:11Z	modver=2.5.1	mcr=1.19.1	java=17	loader=	tag=2.5.1	commit=38db26f449c794f1aa29dff6a76ce93cedb1551a	=
+date=2022-07-29T16:20:48Z	modver=2.5.2	mcr=1.19.1	java=17	loader=	tag=2.5.2	commit=9ed22475811f129689bece962997a643c5f5eff7	=
+date=2022-08-06T07:12:57Z	modver=2.6.0	mcr=1.19.2	java=17	loader=	tag=2.6.0	commit=7874fe1435964fa6e2345fbd88fa5735479e49c8	=
+date=2022-10-29T11:09:05Z	modver=2.7.0a1	mcr=22w43a	java=17	loader=	tag=2.7.0a1	commit=6176e542f1edb9bd0fc0ccdb33e0df3d272ebdbc	=
+date=2022-12-08T19:36:23Z	modver=2.7.0	mcr=1.19.3	java=17	loader=	tag=2.7.0	commit=3669bd6fe7f83dbe24b698153ff8cb559ce02cb6	=
+date=2023-03-16T17:27:46Z	modver=2.7.1	mcr=1.19.4	java=17	loader=	tag=2.7.1	commit=0900742facf88d3f378c8cac2a4a1d7edc9cb88a	=
+date=2023-03-21T19:25:02Z	modver=2.8.0	mcr=1.19.4	java=17	loader=	tag=2.8.0	commit=1c071a51176a9e64990fb3b91363d17485b3cfbb	=
