@@ -5,12 +5,13 @@
 function compat_versions_scan () {
   export LANG{,UAGE}=en_US.UTF-8  # make error messages search engine-friendly
   local SELFPATH="$(readlink -m -- "$BASH_SOURCE"/..)"
+  local REPORT='compat_versions.txt'
   local -A CFG=(
     [scan_tags_since]='0393cbae'
-    [scan_tags_report_dest]='compat_versions.txt'
+    [scan_tags_report_dest]="$REPORT"
     )
-  rm -- tmp.java_*.txt
   source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
+  ./matrix.gen.sed -- "$REPORT" >tmp.matrix.txt || return $?
 }
 
 
@@ -29,11 +30,6 @@ function found_one_tag () {
 
   local JAVA="$(find_java_version_for_tag)"
   INFO[java]="$JAVA"
-
-  local JMX=
-  printf -v JMX 'tmp.java_%03d.txt' "$JAVA"
-  [ -f "$JMX" ] || init_java_matrix >"$JMX" || return $?
-  echo "                    -   '$TAG'" >>"$JMX" || return $?
 
   local UTS="$(git show --no-patch --format=%at "$COMMIT")"
   INFO[date]="$(date --date="@$UTS" --utc +'%FT%TZ')"

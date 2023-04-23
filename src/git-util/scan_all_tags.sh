@@ -94,4 +94,4 @@ function scan_all_tags__write_info_dict () {
 
 
 
-[ "$1" == --lib ] && return 0; scan_all_tags "$@"; exit $?
+[ "$1" == --lib ] && return 0; scan_all_tags "$@"; return $?
