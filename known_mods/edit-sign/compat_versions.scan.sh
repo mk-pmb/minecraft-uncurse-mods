@@ -5,13 +5,12 @@
 function compat_versions_scan () {
   export LANG{,UAGE}=en_US.UTF-8  # make error messages search engine-friendly
   local SELFPATH="$(readlink -m -- "$BASH_SOURCE"/..)"
-  local REPORT='compat_versions.txt'
   local -A CFG=(
     [scan_tags_since]='0393cbae'
-    [scan_tags_report_dest]="$REPORT"
+    [scan_tags_report_dest]='compat_versions.txt'
     )
   source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
-  ./matrix.gen.sed -- "$REPORT" >tmp.matrix.txt || return $?
+  gen_build_matrix >tmp.matrix.txt || return $?
 }
 
 
@@ -76,6 +75,23 @@ function init_java_matrix () {
   M="${M//¶/$'\n'>>>>}"
   M="${M//>/    }"
   echo "$M"
+}
+
+
+function gen_build_matrix () {
+  eqtabtbl_foreach "${CFG[scan_tags_report_dest]}" gen_build_matrix__each_line
+}
+
+
+function gen_build_matrix__each_line () {
+  local -A INFO=(); eval "INFO=( $EQTABTBL_LINE )"
+  local JAR="editsign-v${INFO[modver]}-mc${INFO[mcr]}-${INFO[loader]}"
+  JAR="${JAR%-}.jar"
+  echo '                  - {' \
+    "java: ${INFO[java]}," \
+    "license: '${INFO[license]}'," \
+    "artifact: '$JAR'," \
+    "tag: '${INFO[tag]}' }"
 }
 
 

@@ -7,7 +7,7 @@ function compat_versions_scan () {
   local SELFPATH="$(readlink -m -- "$BASH_SOURCE"/..)"
   local -A CFG=(
     [scan_tags_since]='bcea78c7' # PR 503 merged
-    [scan_tags_report]='compat_versions.txt'
+    [scan_tags_report_dest]='compat_versions.txt'
     )
   source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
 }

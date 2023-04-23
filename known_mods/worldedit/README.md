@@ -2,7 +2,25 @@
 WorldEdit
 =========
 
-Current status:
+<!-- %begin% descr -->
+In-game map editor, providing mass-operations on blocks and lots more.
+<!-- %endof% descr -->
+
+<!-- %begin% meta -->
+
+* __Mod repo:__
+  https://github.com/EngineHub/WorldEdit
+
+* __Official download site:__
+  https://www.curseforge.com/minecraft/mc-mods/worldedit
+  * If the official download site works for you, please download from there,
+    so the mod authors get proper statistics on the populariy of their mod.
+
+<!-- %endof% meta -->
+
+
+Current status
+--------------
 
 * [Compatibility overview](compat_versions.txt):
   Which WorldEdit version do you need for which Minecraft version?

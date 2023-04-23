@@ -4,13 +4,7 @@
 
 function ensure_bare_repo () {
   local URL="$1"
-  if [ -z "$URL" ]; then
-    local -A MOD=()
-    source -- mod_info.rc
-    URL="${MOD[repo]}"
-    [ -n "$URL" ] || return 3$(
-      echo "E: $FUNCNAME: No URL given and failed to detect it." >&2)
-  fi
+  [ -n "$URL" ] || return 4$(echo "E: $FUNCNAME: missing URL" >&2)
   local RMT="${REPO_UPSTREAM:-origin}"
   local BRAN="$REPO_MAIN_BRANCH"
   local MAX_AGE="${REPO_MAX_AGE:-3 hours}"

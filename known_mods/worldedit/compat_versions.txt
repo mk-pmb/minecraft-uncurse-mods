@@ -1,3 +1,4 @@
+# -*- coding: utf-8, tab-width: 16 -*-
 tag=7.0.1	commit=22cf93c31fe4ca31a708b742d15f73d59786d94d	minecraft=1.14.4	=
 tag=7.1.0	commit=d283dd914d111e2c624ace315bb5b80b46e45cdc	minecraft=1.15.2	=
 tag=7.2.0	commit=a51fa437429ec2ce9d2d81582eceb31c4b7beacb	minecraft=1.16.3	=

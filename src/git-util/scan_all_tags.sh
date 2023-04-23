@@ -8,15 +8,21 @@ function scan_all_tags () {
   cd -- "$SELFPATH" || return $?
   local REPOPATH="$(git rev-parse --show-toplevel)"
   [ -d "$REPOPATH" ] || return 3$(echo 'E: Cannot detect repo path!' >&2)
-  source -- "$REPOPATH"/src/bash-util/regex_util.sh --lib || return $?
-
-  local -A MOD=()
-  source -- mod_info.rc || return $?
-  export GIT_DIR='tmp.bare-repo.git'
-  "$REPOPATH"/src/git-util/ensure_bare_repo.sh "${MOD[repo]}" || return $?
+  local LIB='
+    bash-util/eqtabtbl.sh
+    bash-util/regex_util.sh
+    bash-util/detect_mod_meta.sh
+    '
+  for LIB in $LIB; do source -- "$REPOPATH/src/$LIB" --lib || return $?; done
 
   local REPORT_DEST="${CFG[scan_tags_report_dest]}"
+  [ -n "$REPORT_DEST" ] || return 4$(
+    echo "E: $FUNCNAME: No report destination!" >&2)
   local REPORT_TMP="tmp.$REPORT_DEST"
+
+  local -A MOD=(); detect_mod_meta || return $?
+  export GIT_DIR='tmp.bare-repo.git'
+  "$REPOPATH"/src/git-util/ensure_bare_repo.sh "${MOD[mod_repo]}" || return $?
 
   local DIFF='diff'
   colordiff </dev/null &>/dev/null && DIFF='colordiff'
