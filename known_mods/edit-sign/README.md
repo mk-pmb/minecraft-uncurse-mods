@@ -22,11 +22,14 @@ Lets you edit the text of signs even long after they have been placed.
 How to build
 ------------
 
-1.  Run `./compat_versions.scan.sh` to update version info.
-1.  As a side effect, it should have created `tmp.matrix.txt`
-    with a list of suggestions for build matrix entries.
-1.  Use these suggestions as described in
+1.  Check if the version you want to build is listed in
+    [`compat_versions.txt`](compat_versions.txt) and
+    [`build_matrix_suggestions.txt`](`build_matrix_suggestions.txt`).
+    * If not, run `./compat_versions.scan.sh` to update version info.
+1.  Find the relevant build matrix lines in the suggestions file.
+1.  Use them as described in
     [this repo](https://github.com/mk-pmb/ghabuild-minecraft-mod-editsign).
+
 
 
 

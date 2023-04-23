@@ -10,7 +10,7 @@ function compat_versions_scan () {
     [scan_tags_report_dest]='compat_versions.txt'
     )
   source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
-  gen_build_matrix >tmp.matrix.txt || return $?
+  gen_build_matrix >build_matrix_suggestions.txt || return $?
 }
 
 
@@ -79,6 +79,7 @@ function init_java_matrix () {
 
 
 function gen_build_matrix () {
+  echo '# -*- coding: utf-8, tab-width: 4 -*-'
   eqtabtbl_foreach "${CFG[scan_tags_report_dest]}" gen_build_matrix__each_line
 }
 
