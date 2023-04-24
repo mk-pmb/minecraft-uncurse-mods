@@ -14,12 +14,13 @@ function ensure_bare_repo () {
   git init || return $?
   git remote add "$RMT" "$URL" || true
 
+  local TIMESTAMP_FILES=()
   if ! ensure_bare_repo__is_recent_enough; then
     echo 'D: Last fetch was too long ago. Fetching again.'
     git fetch "$RMT" || return $?
 
     # Update file time even if git did not find new commits:
-    touch --no-create -- "$FETCH_REF_FILE" || return $?
+    touch --no-create -- "${TIMESTAMP_FILES[@]}" || return $?
 
     # Update our knowledge about which remote branch is the default:
     git remote set-head "$RMT" --auto
@@ -37,6 +38,7 @@ function ensure_bare_repo__is_recent_enough () {
   [ -n "$BRAN" ] || BRAN="$(git rev-parse --abbrev-ref "$HEAD")"
   [[ "$BRAN" == "$RMT/"* ]] && BRAN="${BRAN#$RMT/}"
   local FETCH_REF_FILE="$GIT_DIR/refs/remotes/$RMT/$BRAN"
+  TIMESTAMP_FILES+=( "$FETCH_REF_FILE" )
   local AGE_CMP="$GIT_DIR"/recent_enough_fetch.ts
   touch --date="$MAX_AGE ago" -- "$AGE_CMP" || return $?
   [ "$FETCH_REF_FILE" -nt "$AGE_CMP" ] || return 1
