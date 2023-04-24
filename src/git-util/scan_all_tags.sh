@@ -20,7 +20,7 @@ function scan_all_tags () {
     echo "E: $FUNCNAME: No report destination!" >&2)
   local REPORT_TMP="tmp.$REPORT_DEST"
 
-  local -A MOD=(); detect_mod_meta || return $?
+  detect_mod_meta || return $?
   export GIT_DIR='tmp.bare-repo.git'
   "$REPOPATH"/src/git-util/ensure_bare_repo.sh "${MOD[mod_repo]}" || return $?
 

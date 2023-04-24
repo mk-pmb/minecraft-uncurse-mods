@@ -5,7 +5,7 @@
 function compat_versions_scan () {
   export LANG{,UAGE}=en_US.UTF-8  # make error messages search engine-friendly
   local SELFPATH="$(readlink -m -- "$BASH_SOURCE"/..)"
-  local -A CFG=(
+  local -A MOD=() CFG=(
     [scan_tags_since]='0393cbae'
     [scan_tags_report_dest]='compat_versions.txt'
     )
