@@ -12,7 +12,7 @@ function scan_all_tags () {
     bash-util/eqtabtbl.sh
     bash-util/regex_util.sh
     bash-util/detect_mod_meta.sh
-    '
+    '"${CFG[scan_tags_extra_libs]}"
   for LIB in $LIB; do source -- "$REPOPATH/src/$LIB" --lib || return $?; done
 
   local REPORT_DEST="${CFG[scan_tags_report_dest]}"
@@ -42,6 +42,16 @@ function scan_all_tags () {
     $EACH_TAG_CMD || return $?$(
       echo "E: Failed to run hook '$EACH_TAG_CMD' for tag '$TAG', rv=$?" >&2)
   done 7>>"$REPORT_TMP"
+
+  scan_all_tags__finalize_report || return $?
+}
+
+
+function scan_all_tags__finalize_report () {
+  if [ "$REPORT_DEST" == . ]; then
+    rm -- "$REPORT_TMP" || return $?
+    return 0
+  fi
 
   LANG=C sort --version-sort -- "$REPORT_TMP" >"$REPORT_TMP".sorted || return $?
   local VAL="${CFG[scan_tags_report_prepend]}"

@@ -20,7 +20,8 @@ function ensure_bare_repo () {
     git fetch "$RMT" || return $?
 
     # Update file time even if git did not find new commits:
-    touch --no-create -- "${TIMESTAMP_FILES[@]}" || return $?
+    [ "${#TIMESTAMP_FILES[@]}" == 0 ] \
+      || touch --no-create -- "${TIMESTAMP_FILES[@]}" || return $?
 
     # Update our knowledge about which remote branch is the default:
     git remote set-head "$RMT" --auto
