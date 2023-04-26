@@ -23,10 +23,9 @@ How to build
 ------------
 
 1.  Check if the version you want to build is listed in
-    [`compat_versions.txt`](compat_versions.txt) and
-    [`build_matrix_suggestions.txt`](`build_matrix_suggestions.txt`).
+    [`build_matrix_suggestions.md`](`build_matrix_suggestions.md`).
     * If not, run `./compat_versions.scan.sh` to update version info.
-1.  Find the relevant build matrix lines in the suggestions file.
+1.  Find the relevant version info lines in the suggestions file.
 1.  Use them as described in
     [this repo](https://github.com/mk-pmb/ghabuild-minecraft-mod-editsign).
 

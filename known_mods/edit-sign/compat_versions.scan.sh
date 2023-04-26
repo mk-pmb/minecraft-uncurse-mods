@@ -10,7 +10,7 @@ function compat_versions_scan () {
     [scan_tags_report_dest]='compat_versions.txt'
     )
   source -- "$SELFPATH"/../../src/git-util/scan_all_tags.sh "$@" || return $?
-  gen_build_matrix >build_matrix_suggestions.txt || return $?
+  gen_build_matrix >build_matrix_suggestions.md || return $?
 }
 
 
@@ -79,20 +79,27 @@ function init_java_matrix () {
 
 
 function gen_build_matrix () {
-  echo '# -*- coding: utf-8, tab-width: 4 -*-'
+  echo $'\xEF\xBB\xBF<!-- -*- tab-width: 4 -*- -->'
+  echo
+  local -A MDTBL=()
+  mdtbl_head '
+    modver   <9
+    mcr      <9
+    license  <13
+    # loader   <7
+    java     >4
+    tag      <29
+    '
   eqtabtbl_foreach "${CFG[scan_tags_report_dest]}" gen_build_matrix__each_line
+  echo
 }
 
 
 function gen_build_matrix__each_line () {
   local -A INFO=(); eval "INFO=( $EQTABTBL_LINE )"
-  local JAR="editsign-v${INFO[modver]}-mc${INFO[mcr]}-${INFO[loader]}"
-  JAR="${JAR%-}.jar"
-  echo '                  - {' \
-    "java: ${INFO[java]}," \
-    "license: '${INFO[license]}'," \
-    "artifact: '$JAR'," \
-    "tag: '${INFO[tag]}' }"
+  mdtbl_rowfmt INFO || return $?
+  # local JAR="editsign-v${INFO[modver]}-mc${INFO[mcr]}-${INFO[loader]}"
+  # JAR="${JAR%-}.jar"
 }
 
 
