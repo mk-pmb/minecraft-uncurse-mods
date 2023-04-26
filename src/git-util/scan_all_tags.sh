@@ -10,6 +10,7 @@ function scan_all_tags () {
   [ -d "$REPOPATH" ] || return 3$(echo 'E: Cannot detect repo path!' >&2)
   local LIB='
     bash-util/eqtabtbl.sh
+    bash-util/mdtbl.sh
     bash-util/regex_util.sh
     bash-util/detect_mod_meta.sh
     '"${CFG[scan_tags_extra_libs]}"
