@@ -28,18 +28,82 @@ Let's lift that curse.
 
 
 
+Bonus features
+--------------
+
+* [ ] A downloader that not only grabs JARs but also…
+  * [ ] renames them in a way that lets me find compatible JARs easily in
+        MultiMC's file selection dialog.
+  * [ ] rewrites them locally to normalize the declared mod version in a way
+        that lets me easily verify versions in MultiMC's instance mod list.
+
+
 
 Mods currently in scope
 -----------------------
 
 ### Good enough
 
-* [WorldEdit + WorldEdit CUI](known_mods/worldedit/)
-
+* [WorldEdit](known_mods/worldedit/)
+* [WorldEdit CUI](known_mods/worldeditcui/)
 
 ### Upcoming
 
-(—)
+* https://github.com/Rakambda/EditSign
+* https://github.com/badasintended/wthit
+  * [needs](https://github.com/badasintended/wthit/blob/4cafc52a34d1726ec324ff393c9b6f197c7a96d0/docs/plugin/getting_started.md?plain=1#L22)
+    https://github.com/badasintended/badpackets
+* https://github.com/LambdAurora/LambDynamicLights
+* https://github.com/LambdAurora/LambdaBetterGrass
+* https://github.com/Siphalor/mouse-wheelie
+* https://github.com/Rakambda/FallingTree
+* https://github.com/Rongmario/CleanCut
+* https://github.com/maruohon/minihud
+  * [needs](https://github.com/maruohon/minihud/blob/b6e5d670fe6a2dd5ef86d964830b12beed5686ae/README.md?plain=1#L18)
+    https://github.com/maruohon/malilib
+* https://github.com/shedaniel/RoughlyEnoughItems
+* https://github.com/squeek502/AppleSkin
+* https://github.com/Wurst-Imperium/WI-Zoom
+* https://github.com/Szum123321/window_title_changer
+* Xaero's Minimap
+* Xaero's WorldMap
+
+
+### Performance mods
+
+* Packs
+  * https://github.com/TherionRO/Minecraft-Optimization-Pack
+  * https://github.com/auroric-platform/fabric-mods
+* https://github.com/PaperMC/Starlight
+* iris
+* https://github.com/CaffeineMC/sodium-fabric
+* https://github.com/rfresh2/XaeroPlus
+
+
+### Maybe unidentified deps of other mods?
+* architectury
+* cloth-config
+* continuity
+* clumps
+* entityculling
+* ferritecore
+* FpsReducer2
+* indium
+* lazydfu
+* lithium
+* modmenu
+* viafabric
+
+
+### Maybe later
+* dark-loading-screen (obsolete in MC 1.19.4+, replaced by Vanilla accessibility option)
+* betterbeds
+* horse-stats-vanilla
+* window_title_changer
+* https://github.com/thexaero/open-parties-and-claims
+
+* Lists of mod suggestions:
+  * https://github.com/babybluetit/Xaeros-Minimap-Modded-Support
 
 
 
