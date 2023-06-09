@@ -64,6 +64,7 @@ Mods currently in scope
 * https://github.com/shedaniel/RoughlyEnoughItems
 * https://github.com/squeek502/AppleSkin
 * https://github.com/Wurst-Imperium/WI-Zoom
+* https://github.com/isXander/Zoomify
 * https://github.com/Szum123321/window_title_changer
 * Xaero's Minimap
 * Xaero's WorldMap
