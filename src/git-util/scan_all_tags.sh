@@ -5,9 +5,9 @@
 function scan_all_tags () {
   local EACH_TAG_CMD="${1:-found_one_tag}"; shift
 
-  cd -- "$SELFPATH" || return $?
   local REPOPATH="$(git rev-parse --show-toplevel)"
   [ -d "$REPOPATH" ] || return 3$(echo 'E: Cannot detect repo path!' >&2)
+  cd -- "$REPOPATH" || return $?
   local LIB='
     bash-util/eqtabtbl.sh
     bash-util/mdtbl.sh
