@@ -66,8 +66,7 @@ Mods currently in scope
 * https://github.com/Wurst-Imperium/WI-Zoom
 * https://github.com/isXander/Zoomify
 * https://github.com/Szum123321/window_title_changer
-* Xaero's Minimap
-* Xaero's WorldMap
+* <del>Xaero's Minimap + WorldMap</del> (not free software, unfortunately.)
 
 
 ### Performance mods
