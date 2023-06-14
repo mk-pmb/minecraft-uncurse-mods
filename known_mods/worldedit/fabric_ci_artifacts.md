@@ -20,4 +20,7 @@ doesn't strain EngineHub's CI infrastructure.
 * [worldedit-fabric-mc1.19.4-7.2.14-dist.jar](http://web.archive.org/web/20230422000220/https://ci.enginehub.org/repository/download/bt10/21660:id/worldedit-fabric-mc1.19.4-7.2.14-dist.jar?branch=version%2F7.2.x&guest=1)
   | size: 4536653
   | sha512: [1aa78a4a82…](?hex=1aa78a4a829aa5a415a821e9046f925654fa2520f95c65e2565d00c04f397a9bdfb5f7ca15369303240aab238ecccda2cb4ff3c13f2895423a6c3eea107bdff7)
+* [worldedit-fabric-mc1.20-7.2.15-SNAPSHOT-dist.jar](http://web.archive.org/web/20230614004242/https://ci.enginehub.org/repository/download/bt10/22133:id/worldedit-fabric-mc1.20-7.2.15-SNAPSHOT-dist.jar?branch=version%2F7.2.x&guest=1)
+  | size: 4600374
+  | sha512: [f675859ecb…](?hex=f675859ecb1a2b171a751a4203bab93bbadebc5f5673e8f4f3d38b91b0113e9a4ab3018f14a8406472a57bd420acadc9af4989f04e586268070771de069c7b57)
 
