@@ -96,14 +96,18 @@ Mods currently in scope
 
 
 ### Maybe later
-* dark-loading-screen (obsolete in MC 1.19.4+, replaced by Vanilla accessibility option)
+* dark-loading-screen (obsolete in MC 1.19.4+, replaced by Vanilla
+  accessibility option, also can probably be fixed via resource pack.)
 * betterbeds
 * horse-stats-vanilla
 * window_title_changer
-* https://github.com/thexaero/open-parties-and-claims
+* [Open Parties and Claims](https://github.com/thexaero/open-parties-and-claims)
+* [OpenBlocks](https://github.com/OpenMods/OpenBlocks)
 
 * Lists of mod suggestions:
   * https://github.com/babybluetit/Xaeros-Minimap-Modded-Support
+  * https://legacy.curseforge.com/minecraft/modpacks/lazarvanilla
+  * https://legacy.curseforge.com/minecraft/modpacks/untold-stories
 
 
 
