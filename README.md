@@ -66,7 +66,10 @@ Mods currently in scope
 * https://github.com/Wurst-Imperium/WI-Zoom
 * https://github.com/isXander/Zoomify
 * https://github.com/Szum123321/window_title_changer
+* https://github.com/maruohon/tweakeroo
+  * https://github.com/maruohon/malilib
 * <del>Xaero's Minimap + WorldMap</del> (not free software, unfortunately.)
+* https://github.com/Sjouwer/gamma-utils
 
 
 ### Performance mods
@@ -78,6 +81,7 @@ Mods currently in scope
 * iris
 * https://github.com/CaffeineMC/sodium-fabric
 * https://github.com/rfresh2/XaeroPlus
+* Distant Horizons (Do its simplified chunks make it a perf mod?)
 
 
 ### Maybe unidentified deps of other mods?
@@ -108,6 +112,20 @@ Mods currently in scope
   * https://github.com/babybluetit/Xaeros-Minimap-Modded-Support
   * https://legacy.curseforge.com/minecraft/modpacks/lazarvanilla
   * https://legacy.curseforge.com/minecraft/modpacks/untold-stories
+
+
+
+### Probably to be avoided
+
+… albeit we still could offer them:
+
+* Caesium:
+  Claims to provide a more efficient and reliable world storage format than
+  the default [Anvil file format](https://minecraft.wiki/w/Anvil_file_format)
+  but seems to be incompatible with Xaero's Worldmap.
+  (Causes XWM to forget map areas that aren't currently in render distance.)
+
+
 
 
 
