@@ -107,6 +107,7 @@ Mods currently in scope
 * window_title_changer
 * [Open Parties and Claims](https://github.com/thexaero/open-parties-and-claims)
 * [OpenBlocks](https://github.com/OpenMods/OpenBlocks)
+* [Better Controls](https://github.com/chylex/Better-Controls) can prevent coasting/drifting in creative mode flight.
 
 * Lists of mod suggestions:
   * https://github.com/babybluetit/Xaeros-Minimap-Modded-Support
