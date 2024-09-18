@@ -82,6 +82,8 @@ Mods currently in scope
 * https://github.com/CaffeineMC/sodium-fabric
 * https://github.com/rfresh2/XaeroPlus
 * Distant Horizons (Do its simplified chunks make it a perf mod?)
+* nvidium (renderer optimized for nvidia) https://github.com/MCRcortex/nvidium
+
 
 
 ### Maybe unidentified deps of other mods?
