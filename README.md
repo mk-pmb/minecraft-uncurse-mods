@@ -50,6 +50,7 @@ Mods currently in scope
 ### Upcoming
 
 * https://github.com/Rakambda/EditSign
+* https://github.com/brunohpaiva/better-sign-edit
 * https://github.com/badasintended/wthit
   * [needs](https://github.com/badasintended/wthit/blob/4cafc52a34d1726ec324ff393c9b6f197c7a96d0/docs/plugin/getting_started.md?plain=1#L22)
     https://github.com/badasintended/badpackets
